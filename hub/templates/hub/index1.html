@@ -1,0 +1,9 @@
+<ul>
+    <!-- language dtl : Django Template Language-->
+    {% for c in coachs %}
+    <li>{{c.first_name}}</li>
+    <li>{{c.last_name}}</li>
+    <li>{{c.email}}</li>
+    <hr>
+    {% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+<ul>
+    <!-- language dtl : Django Template Lnguage-->
+    {% for s in students %}
+    <li>{{s.first_name}}</li>
+    <li>{{s.last_name}}</li>
+    <li>{{s.email}}</li>
+    <hr>
+    {% endfor %}
+</ul>
