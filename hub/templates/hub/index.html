@@ -1,9 +1,13 @@
+
+{% extends 'base.html' %}
+{% block content%}
 <ul>
-    <!-- language dtl : Django Template Lnguage-->
-    {% for s in students %}
+    <!-- language dtl : Django Template Language-->
+    {% for s in object_list %}
     <li>{{s.first_name}}</li>
     <li>{{s.last_name}}</li>
     <li>{{s.email}}</li>
     <hr>
     {% endfor %}
 </ul>
+{% endblock content%}

@@ -17,6 +17,8 @@ from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path, include
 
+from Project1.settings import STATIC_URL
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hub/', include('hub.urls')),
