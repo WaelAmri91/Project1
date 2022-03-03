@@ -2,6 +2,8 @@ from xml.dom import ValidationErr
 from django.db import models
 from django.core.validators import MinValueValidator,MaxValueValidator
 from django.core.exceptions import ValidationError
+from django.urls import reverse
+
 # Create your models here.
 
 def is_Esprit_Email(value):
@@ -19,6 +21,8 @@ class User(models.Model):
         return f"{self.first_name} {self.last_name}"
     
 class Student(User):
+    def get_absolute_url(self):
+        return reverse('eleve')
     pass
 class Coach(User):
     pass
